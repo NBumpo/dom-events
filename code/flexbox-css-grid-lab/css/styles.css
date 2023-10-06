@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    
+  }
+  
+  body {
+    margin: 0;
+    font-family: Helvetica;
+    background-color: rgb(6, 109, 78);
+    height: 100vh;
+  }
+  .profilepic {
+    background-color: white;
+    grid-area: profile;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .phone {
+    background-color: greenyellow;
+    grid-area: phone;
+  }
+
+  .message {
+   background-color: rgb(34, 216, 47);
+   grid-area: message;
+  }
+
+  section {
+    background-color: rgb(206, 206, 206);
+    grid-area: info;
+  }
+  main {
+    padding: 0;
+    margin: 20% 25% 25% 25%;
+    height: 25vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  
+    grid-template-areas: 
+    "profile profile info info info"
+    "profile profile info info info"
+    "profile profile info info info"
+    "phone message info info info";
+  }
+
+  .blurred-pfp {
+      height: 60%;
+      width: 50%;
+      border-radius: 80%;
+      border: 10px solid rgb(55, 236, 133)
+    
+  }
+
+  .stars {
+    height: 30%;
+    width: 50%;
+  }
+  
+  .online {
+    align-items: left;
+    justify-content: left;
+  }
